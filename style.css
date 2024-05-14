@@ -92,3 +92,10 @@ section {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+/* Split the selection intol 3 column style */
+
+  .container {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
