@@ -7,14 +7,86 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <header class="header-overlay">
-        <h1>Hello</h1>
-        <h2>How are you?</h2>
-    </header>
-    <section class="background-image"></section>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="/">
+            <img src="https://i.ibb.co/YQdqrwJ/openart-image-RVi33lr7-1715650818970-raw.jpg" width="336" height="84" class="d-inline-block align-top" alt="Hikelah logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Popular Trails</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/map">Interactive Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Useful Links</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about_me">About Me</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+      <hr class="break-line">
+
+      <!-- New Menu Bar with Dropdowns -->
+      <div class="menu-bar">
+        <ul class="menu">
+            <li class="menu-item">A
+                <ul class="dropdown">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">B
+                <ul class="dropdown">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">C
+                <ul class="dropdown">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">D
+                <ul class="dropdown">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+
+    <section class="background-image">
+        <div class="overlay-text">
+            <h2>Welcome to Recipe Search</h2>
+            <p>Find delicious recipes based on your preferences!</p>
+        </div>
+    </section>
     <section class="checkboxes">
         <div class="column">
-            <h3>Ingredients (5 x 3)</h3>
+            <h3>Ingredients</h3>
             <div>
                 <input type="checkbox" id="ingredient1">
                 <label for="ingredient1">Option 1</label>
@@ -25,18 +97,42 @@
             </div>
         </div>
         <div class="column">
-            <h3>Appliances (5 x 2)</h3>
+            <h3>Appliances</h3>
             <div>
                 <input type="checkbox" id="appliance1">
                 <label for="appliance1">Option 1</label>
             </div>
             <div>
+                <input type="checkbox" id="appliance1">
+                <label for="appliance1">Option 2</label>
+            </div>
+            <div>
+                <input type="checkbox" id="appliance1">
+                <label for="appliance1">Option 3</label>
+            </div>
+            <div>
+                <input type="checkbox" id="appliance1">
+                <label for="appliance1">Option 4</label>
+            </div>
+            <div>
+                <input type="checkbox" id="appliance2">
+                <label for="appliance2">Option 1</label>
+            </div>
+            <div>
                 <input type="checkbox" id="appliance2">
                 <label for="appliance2">Option 2</label>
             </div>
+            <div>
+                <input type="checkbox" id="appliance2">
+                <label for="appliance2">Option 3</label>
+            </div>
+            <div>
+                <input type="checkbox" id="appliance2">
+                <label for="appliance2">Option 4</label>
+            </div>
         </div>
         <div class="column">
-            <h3>Dietary Preference (5 x 2)</h3>
+            <h3>Dietary Preference</h3>
             <div>
                 <input type="checkbox" id="dietary1">
                 <label for="dietary1">Option 1</label>

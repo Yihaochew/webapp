@@ -5,9 +5,13 @@ body {
 }
 
 header {
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white; /* Text color for header content */
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, h2 {
@@ -16,14 +20,25 @@ h1, h2 {
 
 .background-image {
     background-image: url("https://i.ibb.co/YQdqrwJ/openart-image-RVi33lr7-1715650818970-raw.jpg"); /* Replace with your image URL */
-    background-size: cover;
-    height: 300px;
+    background-size: 1600px 700px;
+    background-repeat: no-repeat;
+    height: 700px; /* Adjust height as needed */
+    position: relative; /* Enable absolute positioning for overlay text */
 }
 
 .checkboxes {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+}
+
+.overlay-text {
+    position: absolute; /* Position the text absolutely within the background image section */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning as needed */
+    color: white; /* Text color for overlay content */
+    text-align: center; /* Center text alignment */
 }
 
 .checkboxes div.column {
@@ -44,4 +59,66 @@ h1, h2 {
 
 .checkboxes div {
     margin: 5px 0; /* Margin for individual checkboxes (can be adjusted) */
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Menu bar styling */
+.menu-bar {
+    background-color: #333;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item {
+    float: left;
+}
+
+.menu-item a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
 }
