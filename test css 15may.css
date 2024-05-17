@@ -6,7 +6,7 @@ body {
 
 .top-section {
     background-color: #333;
-    padding: 10px 0;
+    padding: 40px 0;
 }
 
 nav ul {
@@ -18,7 +18,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 35px;
 }
 
 nav ul li a {
@@ -31,7 +31,7 @@ nav ul li a {
     background-image: url('https://i.ibb.co/YQdqrwJ/openart-image-RVi33lr7-1715650818970-raw.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@ nav ul li a {
 .bottom-section {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 30px;
     background-color: #f4f4f4;
 }
 
@@ -70,4 +70,13 @@ nav ul li a {
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 1em;
+}
+
+.disclaimer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F0F8FF; /* AliceBlue background */
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+    color: #333;
 }
